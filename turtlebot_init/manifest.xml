@@ -1,0 +1,17 @@
+<package>
+  <description brief="turtlebot_init">
+
+     turtlebot_init
+
+  </description>
+  <author>elab</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/turtlebot_init</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="turtlebot_node"/>
+
+</package>
+
+
