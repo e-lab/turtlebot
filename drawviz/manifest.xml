@@ -1,0 +1,18 @@
+<package>
+  <description brief="drawviz">
+
+     drawviz
+
+  </description>
+  <author>elab</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/drawviz</url>
+  <depend package="roscpp"/>
+  <depend package="visualization_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="tf"/>
+
+</package>
+
+

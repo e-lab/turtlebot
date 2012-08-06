@@ -1,0 +1,36 @@
+#include<ros/ros.h>
+#include<move_base_msgs/MoveBaseAction.h>
+#include<actionlib/client/simple_action_client.h>
+#include<iostream>
+
+using namespace ros;
+using namespace std;
+
+typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
+
+int main(int argc, char** argv){
+	init(argc, argv, "navigate_goals");
+	NodeHandle n;
+	
+	MoveBaseClient client("move_base", true);
+	while(!client.waitForServer(Duration(2.0))){
+		cout << "Still waiting for move_base to connect" << endl;
+	}
+	move_base_msgs::MoveBaseGoal goal;
+	goal.target_pose.header.frame_id = "base_link";
+	goal.target_pose.header.stamp = Time::now();
+	goal.target_pose.pose.position.x = 0.2;
+	goal.target_pose.pose.orientation.w = 1.0;
+	
+	client.sendGoal(goal);
+	client.waitForResult();
+	
+	if(client.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
+		cout << "Success!!!" << endl;
+	}
+	else{
+		cout << "Epic fail" << endl;
+	}
+	
+	return 0;
+}

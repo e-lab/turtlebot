@@ -1,0 +1,16 @@
+<package>
+  <description brief="camera_tf">
+
+     camera_tf
+
+  </description>
+  <author>elab</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/camera_tf</url>
+  <depend package="roscpp"/>
+  <depend package="tf"/>
+
+</package>
+
+

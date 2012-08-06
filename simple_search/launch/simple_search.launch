@@ -1,0 +1,10 @@
+<launch>
+   <node name="image_share" pkg="image_share" type="image_share" output="screen">
+	</node>
+
+   <node name="map_paint" pkg="drawviz" type="map_paint" output="screen">
+	</node>
+
+   <node name="simple_search" pkg="simple_search" type="simple_search" output="screen">
+	</node>
+</launch>

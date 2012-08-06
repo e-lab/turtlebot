@@ -1,0 +1,16 @@
+<package>
+  <description brief="simple_search">
+
+     simple_search
+
+  </description>
+  <author>elab</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/simple_search</url>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+
+</package>
+
+
