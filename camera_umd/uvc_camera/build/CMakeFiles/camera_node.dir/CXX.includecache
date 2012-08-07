@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/uvc_cam/uvc_cam.h
+string
+-
+linux/videodev2.h
+-
+stdint.h
+-
+
+/home/elab/ros_workspace/camera_umd/uvc_camera/src/uvc_cam.cpp
+cstring
+-
+string
+-
+cstdio
+-
+stdexcept
+-
+dirent.h
+-
+sys/stat.h
+-
+sys/ioctl.h
+-
+sys/mman.h
+-
+fcntl.h
+-
+errno.h
+-
+uvc_cam/uvc_cam.h
+/home/elab/ros_workspace/camera_umd/uvc_camera/src/uvc_cam/uvc_cam.h
+
